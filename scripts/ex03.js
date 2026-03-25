@@ -11,16 +11,16 @@ function salario() {
 
     for (let i = 1; i <= 12; i++) {
 
-        let ganho = parseFloat(prompt("Informe o seus ganhos no mês " + i));
+        let ganho = parseFloat(prompt("informe os seus ganhos do mês " + i));
         if (!isNaN(ganho)) {
             soma += ganho;
 
-            let gasto = parseFloat(prompt("Informe os seus gastos do mês " + i));
+            let gasto = parseFloat(prompt("informe os seus gastos do mês " + i));
             gastot += gasto;
 
 
         } else {
-            alert("Digite um número válido.");
+            alert("digite um número válido");
         }
 
         console.log(soma);
@@ -29,12 +29,12 @@ function salario() {
     }
 
     saldo = soma - gastot;
-    prompt("O seu saldo ao final do ano é de " + saldo);
+    prompt("o seu saldo no final do ano é de " + saldo);
 
     if (saldo < 0){
-        prompt("Você ficou no prejuízo!");
+        prompt("você ficou no prejuízo");
     }else{
-        prompt("Você obteve lucro!");
+        prompt("você teve lucro");
     }
 
 }
