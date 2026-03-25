@@ -2,13 +2,11 @@
 
 function ordem() {
 
-    for (let i = 1; i <= 4; i++) {
-        let vet = [i];
-
-        vet = parseFloat(prompt("informe o valor " + i));
-
-        console.log(vet);
-    }
-
-    
+     let numeros = [];
+     for (let i = 1; i < 5; i++){
+     numeros.push(Number(prompt("informe o valor:" + i)));     
+     }
+     numeros.sort((a, b) => b - a);
+     alert("os números em ordem decrescente são: " + numeros.join(", "));
+   
 }
